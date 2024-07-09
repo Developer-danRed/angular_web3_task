@@ -1,0 +1,16 @@
+
+
+<table class="container mt-5 table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">S.NO</th>
+            <th scope="col">TransferData</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let transferData of TransferResData; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ transferData.transferData }}</td>
+        </tr>
+    </tbody>
+</table>
